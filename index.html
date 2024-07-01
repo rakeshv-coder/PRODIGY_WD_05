@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <h1 class="fade-in">Weather App</h1>
+        <div id="weather-info" class="slide-in">
+            <i id="weather-icon" class="fade-in"></i>
+            <p id="location" class="fade-in"></p>
+            <p id="temperature" class="fade-in"></p>
+            <p id="description" class="fade-in"></p>
+        </div>
+        <div class="input-container slide-in">
+            <input type="text" id="location-input" placeholder="Enter location">
+            <button onclick="getWeatherByLocation()"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
